@@ -6,7 +6,7 @@
 This repository contains an end-to-end implementation of the **Mamba** state-space model architecture designed for efficient language modeling. The project investigates how well small Mamba models can learn to generate coherent English stories when trained on the **TinyStories** dataset.
 
 ## Repository Structure: 
-
+'''text 
 pocket-narrator/
 ├── configs/                          # Configuration files (YAML)
 │   ├── mamba_tinystories_2k/
