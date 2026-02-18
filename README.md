@@ -5,7 +5,8 @@
 ## 📖 Overview
 This repository contains an end-to-end implementation of the **Mamba** state-space model architecture designed for efficient language modeling. The project investigates how well small Mamba models can learn to generate coherent English stories when trained on the **TinyStories** dataset.
 
-## Repository Structure
+## Repository Structure: 
+
 pocket-narrator/
 ├── configs/                          # Configuration files (YAML)
 │   ├── mamba_tinystories_2k/
@@ -52,17 +53,17 @@ Key features:
 ### 1. Data Preprocessing:  
 Train a BPE tokenizer and create a sliding-window dataset from TinyStories.
 
-python -m pocket_narrator.models.mamba.train_tokenizer_and_lm_dataset \
-  --config configs/mamba_tinystories_2k/tokenizer.yaml
+ python -m pocket_narrator.models.mamba.train_tokenizer_and_lm_dataset \
+        --config configs/train_tokenizer_and_lm_dataset.yaml
 
 ### 2. Training
 
 Train the Mamba model. This script logs metrics to Weights & Biases automatically.
 
 python -m pocket_narrator.models.mamba.mamba_main \
-  --model_config configs/mamba_tinystories_2k/model.yaml \
-  --tokenizer_config configs/mamba_tinystories_2k/tokenizer.yaml \
-  --training_config configs/mamba_tinystories_2k/training.yaml \
+  --model_config configs/mamba_tinystories_1M/model.yaml \
+  --tokenizer_config configs/mamba_tinystories_1M/tokenizer.yaml \
+  --training_config configs/mamba_tinystories_1M/training.yaml \
   --num_workers 0
 
 ### 3. Evaluation
@@ -70,9 +71,9 @@ python -m pocket_narrator.models.mamba.mamba_main \
 Evaluate a trained checkpoint for Perplexity (PPL) and generation quality. 
 
 python -m pocket_narrator.models.mamba.mamba_evaluation \
-  --checkpoint results/mamba_tinystories_2k/mamba_best.pt \
-  --model_config configs/mamba_tinystories_2k/model.yaml \
-  --tokenizer_dir tokenizers/tinystories_2k \
+  --checkpoint results/mamba_tinystories_1M/mamba_best.pt \
+  --model_config configs/mamba_tinystories_1M/model.yaml \
+  --tokenizer_dir tokenizers/tinystories_1M \
   --max_examples 256
 
 ### 4. Text Generation
@@ -88,11 +89,12 @@ python -m pocket_narrator.models.mamba.mamba_generate \
   --max_new_tokens 200
 
   
-## Results
+# Results
 We observed a clear scaling law where increasing dataset size dramatically reduces perplexity. 
 
-## References
+# References
 Mamba Paper: Gu & Dao, 2023
+
 TinyStories Paper: Eldan & Li, 2023
 
 
