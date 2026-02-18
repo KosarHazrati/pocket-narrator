@@ -5,7 +5,7 @@
 ## 📖 Overview
 This repository contains an end-to-end implementation of the **Mamba** state-space model architecture designed for efficient language modeling. The project investigates how well small Mamba models can learn to generate coherent English stories when trained on the **TinyStories** dataset.
 
-# Repository Structure
+### Repository Structure
 pocket-narrator/
 ├── configs/                          # Configuration files (YAML)
 │   ├── mamba_tinystories_2k/
@@ -40,13 +40,13 @@ Key features:
 - **End-to-End Pipeline**: Scripts for tokenizer training, dataset chunking, model training, and evaluation.
 - **Efficiency Focus**: Linear scaling with sequence length ($O(T)$) and constant-time inference.
 
-## 📂 Project Structure
+### 📂 Project Structure
 
 - `pocket_narrator/models/mamba/`: Core source code.
   - `mamba_model.py`: Mamba architecture implementation (SSM, Convolution, Gating).
   - `mamba_trainer.py`: Custom training loop with gradient accumulation.
   - `mamba_evaluation.py`: Perplexity calculation and diversity metrics (Distinct-n).
-- `configs/`: YAML configuration files for different dataset sizes (2k, 4k, 8k, 1M).
+- `configs/`: YAML configuration files for different dataset sizes (2k, 4k, 8k, 10k and 1M).
 
 
 # 1. Data Preprocessing:  
