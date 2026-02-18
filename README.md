@@ -50,7 +50,13 @@ pocket-narrator/
 ├── requirements.txt
 └── README.md
 ```
-
+#### Prerequisites
+Install the required dependencies:
+```bash
+pip install -r requirements.txt
+# Or manually:
+pip install torch transformers datasets wandb pyyaml tqdm
+```
 
 ### 1. Data Preprocessing
 
@@ -97,14 +103,18 @@ python -m pocket_narrator.models.mamba.mamba_generate \
   --max_new_tokens 200
 
 ```
+
+## Result: 
+We observed a clear scaling law where increasing dataset size dramatically reduces perplexity.
+
+-  [View Full Experiment ] ([metrics/experiment](https://wandb.ai/once-upon-a-prompt/Mamba/table?nw=nwuserkosarhazrati))
+-  [View Generated Story Samples ] ([(metrics/generated_stories)](https://wandb.ai/once-upon-a-prompt/Mamba/workspace?nw=nwuserkosarhazrati))
+
 ## References
 1.  **Mamba:** Gu, A., & Dao, T. (2023). [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752).
 2.  **TinyStories:** Eldan, R., & Li, Y. (2023). [TinyStories: How Small Can Language Models Be and Still Speak Coherent English?](https://arxiv.org/abs/2305.07759).
 
-### Prerequisites
-Install the required dependencies:
-```bash
-pip install torch transformers datasets wandb pyyaml tqdm
+
 
 
 
