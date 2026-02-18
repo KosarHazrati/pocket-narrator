@@ -5,7 +5,7 @@
 ## 📖 Overview
 This repository contains an end-to-end implementation of the **Mamba** state-space model architecture designed for efficient language modeling. The project investigates how well small Mamba models can learn to generate coherent English stories when trained on the **TinyStories** dataset.
 
-### Repository Structure
+## Repository Structure
 pocket-narrator/
 ├── configs/                          # Configuration files (YAML)
 │   ├── mamba_tinystories_2k/
@@ -49,13 +49,13 @@ Key features:
 - `configs/`: YAML configuration files for different dataset sizes (2k, 4k, 8k, 10k and 1M).
 
 
-# 1. Data Preprocessing:  
+### 1. Data Preprocessing:  
 Train a BPE tokenizer and create a sliding-window dataset from TinyStories.
 
 python -m pocket_narrator.models.mamba.train_tokenizer_and_lm_dataset \
   --config configs/mamba_tinystories_2k/tokenizer.yaml
 
-# 2. Training
+### 2. Training
 
 Train the Mamba model. This script logs metrics to Weights & Biases automatically.
 
@@ -65,7 +65,7 @@ python -m pocket_narrator.models.mamba.mamba_main \
   --training_config configs/mamba_tinystories_2k/training.yaml \
   --num_workers 0
 
-# 3. Evaluation
+### 3. Evaluation
 
 Evaluate a trained checkpoint for Perplexity (PPL) and generation quality. 
 
@@ -75,7 +75,7 @@ python -m pocket_narrator.models.mamba.mamba_evaluation \
   --tokenizer_dir tokenizers/tinystories_2k \
   --max_examples 256
 
-# 4. Text Generation
+### 4. Text Generation
 
 Generate stories from a custom prompt.
 
@@ -91,7 +91,7 @@ python -m pocket_narrator.models.mamba.mamba_generate \
 ## Results
 We observed a clear scaling law where increasing dataset size dramatically reduces perplexity. 
 
-# References
+## References
 Mamba Paper: Gu & Dao, 2023
 TinyStories Paper: Eldan & Li, 2023
 
