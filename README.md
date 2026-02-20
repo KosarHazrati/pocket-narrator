@@ -1,4 +1,4 @@
-Pocket Narrator: Efficient Story Generation with Mamba
+# Pocket Narrator: Efficient Story Generation with Mamba
 
 > **Master Project: Efficient Methods in Machine Learning** > *Exploring the capabilities of Small Language Models (SLMs) on the TinyStories dataset.*
 
@@ -107,9 +107,7 @@ python -m pocket_narrator.models.mamba.mamba_generate \
 ## Result: 
 We observed a clear scaling law where increasing dataset size dramatically reduces perplexity.
 
--  [View Full Experiment ] ([Evaluation]()
--  [View Generated Story Samples ] ([(Generated_stories)]())
--  ([(Generated_stories 1M )]()
+-  View Full Experiment [Evaluation](/Users/kosaralehosseini/Desktop/mambaFiles/wandb_export_2026-02-16T13_35_55.037+01_00.csv) -  Generated [_stories 1M ](/Users/kosaralehosseini/Desktop/mambaFiles/evaluation.json)
 
 ## References
 1.  **Mamba:** Gu, A., & Dao, T. (2023). [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752).
