@@ -1,0 +1,14 @@
+name: mamba_tinystories_1M
+vocab_size: 10000
+d_model: 64 # Recommended: 64, 128, 256, 512.  
+n_layers: 8 # Recommended: 2, 4, 6, 8
+
+seq_len: 256
+
+# SimpleMambaBlock params
+d_state: 16
+d_conv: 3
+expand: 2
+
+pad_token_id: 0
+dropout: 0.0
