@@ -1,4 +1,4 @@
-# Pocket Narrator: Efficient Story Generation with Mamba
+# Pocket Narrator 2 : Efficient Story Generation with Mamba
 
 > **Master Project: Efficient Methods in Machine Learning** > *Exploring the capabilities of Small Language Models (SLMs) on the TinyStories dataset.*
 
