@@ -1,0 +1,53 @@
+{
+  "checkpoint": "results/mamba_tinystories_1M/mamba_best.pt",
+  "eval_loss": 0.2053852597405658,
+  "eval_ppl": 1.2279980720606887,
+  "eval_tokens": 11682048.0,
+  "mean_len_tokens": 72.66666666666667,
+  "mean_distinct_2": 0.5580985915492958,
+  "mean_distinct_3": 0.7782696177062375,
+  "mean_rep_2": 0.4419014084507042,
+  "mean_rep_3": 0.2217303822937626,
+  "ref_metrics": {},
+  "samples": [
+    {
+      "prompt": "Once upon a time there was a little dragon",
+      "generation": "Once \u0120upon \u0120a \u0120time \u0120there \u0120was \u0120a \u0120little \u0120dragon \u0120dragon \u0120dragon \u0120dragon \u0120somet \u0120somet \u0120somet \u0120somet \u0120calm \u0120calm \u0120calm \u0120calm \u0120clut \u0120clut \u0120clut \u0120clut \u0120persistence \u0120persistence \u0120persistence \u0120persistence \u0120shap \u0120shap \u0120shap \u0120shap \u0120remote \u0120remote \u0120remote \u0120remote \u0120Seeing \u0120Seeing \u0120Seeing \u0120Seeing \u0120chipmunk \u0120chipmunk \u0120chipmunk \u0120chipmunk \u0120Gina \u0120Gina \u0120Gina \u0120Gina \u0120fat \u0120fat \u0120fat \u0120fat \u0120caut \u0120tossed \u0120reliable \u0120reliable \u0120reliable \u0120reliable \u0120answered \u0120answered \u0120answered \u0120answered \u0120stretching \u0120stretching \u0120stretching \u0120stretching \u0120boxes \u0120boxes \u0120boxes \u0120boxes \u0120adding \u0120adding \u0120adding",
+      "len_tokens": 73,
+      "distinct_2": 0.5694444444444444,
+      "distinct_3": 0.7887323943661971,
+      "rep_2": 0.4305555555555556,
+      "rep_3": 0.21126760563380287
+    },
+    {
+      "prompt": "In a small village lived a kind robot",
+      "generation": "In \u0120a \u0120small \u0120village \u0120lived \u0120a \u0120kind \u0120robot \u0120robot \u0120robot \u0120robot \u0120woodcut \u0120woodcut \u0120woodcut \u0120woodcut \u0120return \u0120return \u0120return \u0120return \u0120west \u0120west \u0120west \u0120west \u0120ech \u0120ech \u0120ech \u0120ech \u0120Halloween \u0120Halloween \u0120Halloween \u0120Halloween ventually ventually ventually ventually elvet elvet elvet elvet \u0120pull \u0120pull \u0120pull \u0120pull \u0120miss \u0120miss \u0120miss \u0120miss \u0120waiter \u0120waiter \u0120waiter \u0120waiter \u0120homeless \u0120homeless \u0120homeless \u0120homeless nces \u0120en \u0120en \u0120en \u0120en Yeah Yeah Yeah Yeah \u0120smarter \u0120smarter \u0120smarter \u0120smarter \u0120becoming \u0120becoming \u0120becoming \u0120becoming",
+      "len_tokens": 72,
+      "distinct_2": 0.5492957746478874,
+      "distinct_3": 0.7714285714285715,
+      "rep_2": 0.45070422535211263,
+      "rep_3": 0.22857142857142854
+    },
+    {
+      "prompt": "The princess wanted to learn how to code",
+      "generation": "The \u0120princess \u0120wanted \u0120to \u0120learn \u0120how \u0120to \u0120co de de de de \u0120recommend \u0120recommend \u0120recommend \u0120recommend \u0120occasions \u0120occasions \u0120occasions \u0120occasions \u0120squash \u0120squash \u0120squash \u0120squash \u0120carefree \u0120carefree \u0120carefree \u0120carefree \u0120handful \u0120handful \u0120handful \u0120handful \u0120ribbons ising ising ising ising pen pen pen pen umed umed umed umed \u0120pump \u0120pump \u0120pump \u0120pump \u0120wasn\u00c3\u00a2 \u0120wasn\u00c3\u00a2 \u0120wasn\u00c3\u00a2 \u0120wasn\u00c3\u00a2 hest hest hest hest \u0120fearful \u0120fearful \u0120fearful \u0120fearful \u0120echoed \u0120echoed \u0120echoed \u0120echoed ached ached ached ached \u0120Sofia \u0120Sofia \u0120Sofia \u0120Sofia",
+      "len_tokens": 73,
+      "distinct_2": 0.5555555555555556,
+      "distinct_3": 0.7746478873239436,
+      "rep_2": 0.4444444444444444,
+      "rep_3": 0.22535211267605637
+    }
+  ],
+  "config": {
+    "vocab_size": 10000,
+    "d_model": 64,
+    "n_layers": 8,
+    "seq_len": 256,
+    "d_state": 16,
+    "d_conv": 3,
+    "expand": 2,
+    "pad_token_id": 0,
+    "dropout": 0.0,
+    "layer_norm_eps": 1e-05
+  }
+}
