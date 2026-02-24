@@ -1,0 +1,83 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            qcy0ef07hdw7ymlgntnm5s50rt5m91gp:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 16
+                    memoryGb: 16
+                    name: Apple M2 Pro
+                    pcpuCores: 6
+                    ramTotalBytes: "17179869184"
+                    swapTotalBytes: "3221225472"
+                args:
+                    - --checkpoint
+                    - results/mamba_tinystories_1M/mamba_best.pt
+                    - --model_config
+                    - configs/mamba_tinystories_1M/model.yaml
+                    - --tokenizer_dir
+                    - tokenizers/tinystories_1M
+                    - --prompt
+                    - Once upon a time there was a little dragon
+                    - --temperature
+                    - "0.8"
+                    - --max_new_tokens
+                    - "128"
+                cpu_count: 10
+                cpu_count_logical: 10
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "435048914944"
+                email: kosar.hazrati@gmail.com
+                executable: /Users/kosaralehosseini/anaconda3/bin/python
+                git:
+                    commit: 03a41820366194169fb7f11d79c0b60880ad9ed9
+                    remote: https://github.com/KosarHazrati/pocket-narrator.git
+                host: MacBook-Pro-von-Kosar.local
+                memory:
+                    total: "17179869184"
+                os: macOS-15.3.1-arm64-arm-64bit
+                program: -m pocket_narrator.models.mamba.mamba_generate
+                python: CPython 3.11.5
+                root: /Users/kosaralehosseini/Documents/pocket-narrator/pocket_narrator/models/mamba/pocket-narrator
+                startedAt: "2026-02-24T06:37:56.652673Z"
+                writerId: qcy0ef07hdw7ymlgntnm5s50rt5m91gp
+        m: []
+        python_version: 3.11.5
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 105
+            "2":
+                - 1
+                - 11
+                - 49
+                - 105
+            "3":
+                - 2
+                - 13
+                - 16
+                - 62
+            "4": 3.11.5
+            "5": 0.25.0
+            "6": 4.57.5
+            "12": 0.25.0
+            "13": darwin-arm64
+checkpoint:
+    value: results/mamba_tinystories_1M/mamba_best.pt
+max_new_tokens:
+    value: 128
+model_config:
+    value: configs/mamba_tinystories_1M/model.yaml
+num_prompts:
+    value: 1
+temperature:
+    value: 0.8
+tokenizer_dir:
+    value: tokenizers/tinystories_1M
+top_k:
+    value: null

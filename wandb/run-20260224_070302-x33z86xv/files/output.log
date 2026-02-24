@@ -1,0 +1,2 @@
+[RESULT] eval_loss=0.2054 eval_ppl=1.23 tokens=11682048
+[INFO] Wrote: results/mamba_eval/evaluation.json
