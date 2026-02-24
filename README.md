@@ -107,7 +107,7 @@ python -m pocket_narrator.models.mamba.mamba_generate \
 ## Result: 
 We observed a clear scaling law where increasing dataset size dramatically reduces perplexity.
 
--  View Full Experiment [Evaluation](https://github.com/KosarHazrati/pocket-narrator/blob/main/wandb_export_2026-02-18T14_36_48.314%2B01_00.csv#:~:text=wandb_export_2026%2D02%2D18T14_36,-_48.314) -  Generated [stories 1M ](wandb_export_2026-02-18T14_36_48.314+01_00.csv)
+-  View Full Experiment [Evaluation](https://github.com/KosarHazrati/pocket-narrator/blob/main/wandb_export_2026-02-18T14_36_48.314%2B01_00.csv#:~:text=wandb_export_2026%2D02%2D18T14_36,-_48.314) -  Generated [stories 1M ](https://github.com/KosarHazrati/pocket-narrator/blob/main/evaluation.json#:~:text=evaluation.json)
 
 ## References
 1.  **Mamba:** Gu, A., & Dao, T. (2023). [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752).
