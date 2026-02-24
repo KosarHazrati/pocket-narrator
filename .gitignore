@@ -1,0 +1,12 @@
+
+# Large training artifacts / checkpoints
+results/**/*.pt
+results/**/*.pth
+checkpoints**/
+wandb**/
+**/corpus.txt
+
+# Tokenizer corpora and raw dumps
+tokenizers/**/corpus.txt
+tokenizers/**/corpus*.txt
+tokenizers/**/dataset*.txt
