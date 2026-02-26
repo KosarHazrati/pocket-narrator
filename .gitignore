@@ -10,3 +10,18 @@ wandb**/
 tokenizers/**/corpus.txt
 tokenizers/**/corpus*.txt
 tokenizers/**/dataset*.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Weights & Biases local logs/artifacts
+wandb/
+*.wandb
+
+# HuggingFace datasets / Arrow shards
+lm_dataset/**
+**/*.arrow
