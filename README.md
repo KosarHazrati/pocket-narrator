@@ -69,7 +69,7 @@ python -m pocket_narrator.models.mamba.train_tokenizer_and_lm_dataset \
 ```
 ### 2. Training
 
-Train the Mamba model. This script logs metrics to Weights & Biases automatically.
+Train the Mamba model. This script logs metrics to Weights & Biases automatically. Of course if you want for 2k, 4k or 8k you have to change the number $--model-config$, $--tokenizer-config$ and $--training-config$ 1M to 2k, 4k, 8k or 10k.
 ```bash
 python -m pocket_narrator.models.mamba.mamba_main \
   --model_config configs/mamba_tinystories_1M/model.yaml \
@@ -81,7 +81,7 @@ python -m pocket_narrator.models.mamba.mamba_main \
 
 ### 3. Evaluation
 
-Evaluate a trained checkpoint for Perplexity (PPL) and generation quality.
+Evaluate a trained checkpoint for Perplexity (PPL) and generation quality.If you want to run for 2k, 4k or 8k you have to change the number $checkpoint$, $--model-config$ and $--tokenizer-dir$ 1M to 2k, 4k, 8k or 10k.
 ```bash
 python -m pocket_narrator.models.mamba.mamba_evaluation \
   --checkpoint results/mamba_tinystories_1M/mamba_best.pt \
@@ -92,7 +92,7 @@ python -m pocket_narrator.models.mamba.mamba_evaluation \
 ```
 ### 4. Text Generation
 
-Generate stories from a custom prompt.
+Generate stories from a custom prompt.As you know, for generation, it is similar to Training and Evaluation,- you have to change the number $checkpoint$, $--model-config$ and $--tokenizer-dir$ 1M to 2k, 4k, 8k or 10k.
 ```bash
 python -m pocket_narrator.models.mamba.mamba_generate \
   --checkpoint results/mamba_tinystories_1M/mamba_best.pt \
